@@ -235,12 +235,6 @@
   document.addEventListener("contextmenu", e => {
     showAlert(e);  // calling showAlert() i mean this is function mouse right click
   });
-  document.addEventListener("keydown", e => {
-    // calling showAlert() i Mean if the pressed key matched to disabled keys
-    if((e.ctrlKey && disabledKeys.includes(e.key)) || e.key === "F12") {
-      showAlert(e); 
-    }
-  });
 </script>
 <script src="script.js"></script>
 </body>
